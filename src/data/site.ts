@@ -3,7 +3,7 @@ import type { Lang } from "../i18n";
 /** Contact / identity — shared across locales. */
 export const contact = {
   name: "Vira Velmozhna",
-  email: "vira.velmozhna@fastmail.com",
+  email: "mail@viravelmozhna.dev",
   linkedin: "https://www.linkedin.com/in/viravelmozhna/",
 };
 
@@ -20,7 +20,7 @@ const siteCopy: Record<Lang, SiteCopy> = {
     role: "Frontend Developer",
     roleTagline: "React · TypeScript · 4+ years of commercial experience",
     summary:
-      "Frontend Developer with 4+ years of commercial experience specializing in building modern web applications with React and TypeScript. Proven track record in developing reusable components, optimizing application performance, and integrating RESTful APIs. Adept at collaborating in Agile environments with professional proficiency in English and a working knowledge of German. Focused on maintaining high code quality and delivering efficient frontend solutions.",
+      "Frontend Developer with 4+ years of commercial experience building production web applications with React and TypeScript. Led a migration to React 19 and maintain 94% test coverage with Vitest and Cypress, shipping twelve zero-downtime releases a year through Azure DevOps pipelines. Four years working remotely in distributed Agile teams, with professional proficiency in English and working German.",
     location: "Hanover, Germany",
     cvPath: "/vira-velmozhna-cv.pdf",
   },
@@ -29,7 +29,7 @@ const siteCopy: Record<Lang, SiteCopy> = {
     roleTagline:
       "React · TypeScript · über 4 Jahre Erfahrung in agilen Umgebungen",
     summary:
-      "Frontend-Entwicklerin mit über 4 Jahren Erfahrung in der Entwicklung moderner, responsiver Webanwendungen in agilen Umgebungen (Scrum, Kanban). Schwerpunkt auf React und TypeScript, zusätzlich Kenntnisse in Angular und Vue.js. Erfahrung in der Umsetzung nutzerorientierter Lösungen, enger Zusammenarbeit mit Design- und Backend-Teams sowie in CI/CD-Prozessen.",
+      "Frontend-Entwicklerin mit über 4 Jahren Berufserfahrung in der Entwicklung produktiver Webanwendungen mit React und TypeScript. Leitung der Migration auf React 19, Testabdeckung von 94 % mit Vitest und Cypress sowie zwölf Releases pro Jahr ohne Ausfallzeit über CI/CD-Pipelines in Azure DevOps. Seit vier Jahren remote in einem verteilten, agilen Team (Scrum), mit verhandlungssicherem Englisch und Deutsch auf B1-Niveau.",
     location: "Hannover, Deutschland",
     cvPath: "/vira-velmozhna-lebenslauf.pdf",
   },
@@ -61,8 +61,7 @@ const experienceByLang: Record<Lang, ExperienceItem[]> = {
         "Collaborated with UX/UI designers to build responsive interfaces using Sass/Less and an internal component library, ensuring strict compliance with semantic HTML and cross-browser compatibility.",
         "Worked with backend developers to integrate frontend components with server-side logic, ensuring seamless data flow and consistent application performance.",
         "Led the migration of project dependencies to modern React 19 and maintained build environments using Vite, while ensuring system stability and keeping comprehensive test coverage (94%) using Vitest and Cypress.",
-        "Contributed to CI/CD pipelines in Azure DevOps, enabling 12 releases per year with zero downtime, gaining hands-on experience in build and deployment processes.",
-        "Worked within an Agile environment, adapting to evolving business needs through iterative development and regular team collaboration.",
+        "Contributed to CI/CD pipelines in Azure DevOps, enabling 12 releases per year with zero downtime.",
       ],
     },
     {
@@ -90,8 +89,7 @@ const experienceByLang: Record<Lang, ExperienceItem[]> = {
         "Zusammenarbeit mit UX/UI-Designern zur Erstellung responsiver Benutzeroberflächen unter Verwendung von Sass/Less und einer internen Komponentenbibliothek unter Einhaltung von semantischem HTML und plattformübergreifender Kompatibilität.",
         "Enge Zusammenarbeit mit Backend-Entwicklern zur Integration von Frontend-Komponenten mit serverseitiger Logik, um einen nahtlosen Datenfluss und eine konsistente Anwendungsleistung zu gewährleisten.",
         "Leitung der Migration von Projekt-Dependencies auf React 19 und Pflege der Build-Umgebungen mit Vite bei gleichzeitiger Sicherstellung der Systemstabilität und einer Testabdeckung von 94 % mittels Vitest und Cypress.",
-        "Mitwirkung an CI/CD-Pipelines in Azure DevOps, was 12 Releases pro Jahr ohne Ausfallzeiten ermöglichte, und Sammeln praktischer Erfahrung in Build- und Deployment-Prozessen.",
-        "Arbeit in einem agilen Umfeld mit kontinuierlicher Anpassung an sich ändernde Geschäftsanforderungen durch iterative Entwicklung und regelmäßige Team-Collaboration.",
+        "Mitwirkung an CI/CD-Pipelines in Azure DevOps, was zwölf Releases pro Jahr ohne Ausfallzeiten ermöglichte.",
       ],
     },
     {
@@ -136,32 +134,34 @@ export const skillGroups: SkillGroup[] = [
     items: ["React 18/19", "Hooks", "Context API", "React Router", "MobX"],
   },
   {
-    name: '"other_tech"',
-    items: [
-      "Vue.js (Vuex)",
-      "Angular",
-      "RxJS",
-      "Node.js",
-      "Vitest",
-      "Cypress",
-      "Firebase",
-      "MongoDB",
-      "Figma",
-      "Docker",
-    ],
+    name: '"testing"',
+    items: ["Vitest", "Cypress"],
+  },
+  {
+    name: '"backend_and_data"',
+    items: ["Node.js", "MongoDB", "Firebase", "REST APIs"],
+  },
+  {
+    name: '"also_worked_with"',
+    items: ["Next.js", "Vue.js (Vuex)", "Angular", "RxJS"],
   },
   {
     name: '"tools_and_workflow"',
     items: [
       "Vite",
+      "Docker",
       "Git / GitHub",
       "ESLint",
       "Azure DevOps",
       "Jira",
       "Confluence",
+      "Figma",
       "Agile/Scrum",
-      "GitHub Copilot · Amazon Q · Kiro · Cursor",
     ],
+  },
+  {
+    name: '"ai_assisted_development"',
+    items: ["Cursor", "GitHub Copilot", "Amazon Q", "Kiro"],
   },
 ];
 
@@ -173,16 +173,12 @@ export interface Language {
 
 const languagesByLang: Record<Lang, Language[]> = {
   en: [
-    { name: "English", level: "B2", width: "82%" },
+    { name: "English", level: "C1", width: "90%" },
     { name: "German", level: "B1", width: "64%" },
-    { name: "Ukrainian", level: "native", width: "100%" },
-    { name: "Russian", level: "native", width: "100%" },
   ],
   de: [
-    { name: "Englisch", level: "B2 · fließend", width: "82%" },
-    { name: "Deutsch", level: "B1 · gute Kenntnisse", width: "64%" },
-    { name: "Ukrainisch", level: "Muttersprache", width: "100%" },
-    { name: "Russisch", level: "Muttersprache", width: "100%" },
+    { name: "Englisch", level: "C1 · verhandlungssicher", width: "90%" },
+    { name: "Deutsch", level: "B1 · in Weiterentwicklung", width: "64%" },
   ],
 };
 

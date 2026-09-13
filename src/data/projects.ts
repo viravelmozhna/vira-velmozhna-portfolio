@@ -32,6 +32,27 @@ export interface Project {
 
 /** Shared non-translated fields for each project. */
 const shared = {
+  "collab-plan": {
+    slug: "collab-plan",
+    name: "collab-plan",
+    tags: [
+      "Next.js 14",
+      "TypeScript",
+      "Tailwind CSS",
+      "Socket.IO",
+      "Express",
+      "MongoDB",
+      "JWT",
+      "Vercel",
+      "Render",
+    ],
+    language: "TypeScript",
+    languageColor: "#3178c6",
+    liveUrl: "https://collab-plan.vercel.app",
+    repoUrl: "https://github.com/viravelmozhna/collab-plan",
+    featured: true,
+    screenshot: "/shots/collab-plan.png",
+  },
   "volunteer-coordination-app": {
     slug: "volunteer-coordination-app",
     name: "help2gether",
@@ -85,6 +106,32 @@ const copy: Record<
   >
 > = {
   en: {
+    "collab-plan": {
+      description:
+        "Real-time collaborative to-do app — share a list and see every change instantly, no refresh needed.",
+      tagline:
+        "A full-stack monorepo with a Next.js frontend and an Express + Socket.IO backend, with a one-click guest demo.",
+      caseStudy: [
+        {
+          heading: "Overview",
+          body: [
+            "Plan Together is a real-time collaborative to-do list. Share a list with another user and you both see tasks appear, change and get ticked off as it happens, without refreshing.",
+            "Visitors can try it without signing up: \"Try the demo\" creates a throwaway guest account with a sample list.",
+          ],
+        },
+        {
+          heading: "What I built",
+          body: [
+            "- Next.js 14 (App Router) frontend with TypeScript and Tailwind CSS",
+            "- Express REST API with MongoDB (Mongoose) and JWT authentication",
+            "- Real-time updates with Socket.IO — each list is a room, so task changes are pushed to everyone viewing it",
+            "- List sharing by username, with owner and \"shared with me\" lists",
+            "- Guest demo accounts seeded with a sample list and pruned automatically after 7 days",
+            "- npm workspaces monorepo; frontend on Vercel, backend on Render, database on MongoDB Atlas",
+          ],
+        },
+      ],
+    },
     "volunteer-coordination-app": {
       description:
         "Volunteer aid coordination app — browse humanitarian needs, filter by category/urgency/status, and view them on a map.",
@@ -144,6 +191,32 @@ const copy: Record<
     },
   },
   de: {
+    "collab-plan": {
+      description:
+        "Kollaborative To-do-App in Echtzeit — Liste teilen und jede Änderung sofort sehen, ganz ohne Neuladen.",
+      tagline:
+        "Full-Stack-Monorepo mit Next.js-Frontend und Express- + Socket.IO-Backend, inklusive Gast-Demo mit einem Klick.",
+      caseStudy: [
+        {
+          heading: "Überblick",
+          body: [
+            "Plan Together ist eine kollaborative To-do-Liste in Echtzeit. Wird eine Liste mit einer anderen Person geteilt, sehen beide sofort, wie Aufgaben hinzugefügt, geändert und abgehakt werden — ohne Neuladen.",
+            "Ausprobieren geht ohne Registrierung: „Try the demo“ erstellt ein temporäres Gastkonto mit einer Beispielliste.",
+          ],
+        },
+        {
+          heading: "Was ich gebaut habe",
+          body: [
+            "- Next.js-14-Frontend (App Router) mit TypeScript und Tailwind CSS",
+            "- Express-REST-API mit MongoDB (Mongoose) und JWT-Authentifizierung",
+            "- Echtzeit-Updates mit Socket.IO — jede Liste ist ein Room, Änderungen werden an alle Betrachter gepusht",
+            "- Teilen von Listen per Benutzername, mit eigenen und geteilten Listen",
+            "- Gastkonten mit Beispieldaten, die nach 7 Tagen automatisch gelöscht werden",
+            "- Monorepo mit npm Workspaces; Frontend auf Vercel, Backend auf Render, Datenbank auf MongoDB Atlas",
+          ],
+        },
+      ],
+    },
     "volunteer-coordination-app": {
       description:
         "App zur Koordinierung humanitärer Hilfe — Bedarfe durchsuchen, nach Kategorie/Dringlichkeit/Status filtern und auf einer Karte anzeigen.",

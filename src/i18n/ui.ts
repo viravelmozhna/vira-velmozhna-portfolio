@@ -34,6 +34,11 @@ export const ui = {
 
     "footer.note": "built for the web, tested on everything.",
 
+    "consent.text":
+      "This site uses Google Analytics to understand how visitors use it. Analytics cookies are only set if you accept.",
+    "consent.accept": "Accept",
+    "consent.decline": "Decline",
+
     "notfound.title": "404 — Vira Velmozhna",
     "notfound.text": "That project doesn't exist (or moved).",
     "notfound.back": "← Back to projects",
@@ -73,6 +78,11 @@ export const ui = {
     "detail.source": "Quellcode",
 
     "footer.note": "fürs Web gebaut, auf allem getestet.",
+
+    "consent.text":
+      "Diese Website nutzt Google Analytics, um zu verstehen, wie Besucher sie nutzen. Analyse-Cookies werden nur mit Ihrer Zustimmung gesetzt.",
+    "consent.accept": "Akzeptieren",
+    "consent.decline": "Ablehnen",
 
     "notfound.title": "404 — Vira Velmozhna",
     "notfound.text": "Dieses Projekt existiert nicht (oder wurde verschoben).",

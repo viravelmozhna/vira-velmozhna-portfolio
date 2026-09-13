@@ -1,6 +1,7 @@
 ---
 import "../styles/global.css";
 import StarField from "../components/StarField.astro";
+import CookieConsent from "../components/CookieConsent.astro";
 import type { Lang } from "../i18n";
 import { locales, switchLocalePath } from "../i18n";
 import { useTranslations } from "../i18n/ui";
@@ -67,5 +68,6 @@ const path = Astro.url.pathname;
   <body>
     <StarField />
     <slot />
+    <CookieConsent lang={lang} />
   </body>
 </html>
