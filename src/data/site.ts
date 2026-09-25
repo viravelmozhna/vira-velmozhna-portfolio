@@ -5,6 +5,7 @@ export const contact = {
   name: "Vira Velmozhna",
   email: "mail@viravelmozhna.dev",
   linkedin: "https://www.linkedin.com/in/viravelmozhna/",
+  github: "https://github.com/viravelmozhna",
 };
 
 export interface SiteCopy {

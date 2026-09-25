@@ -94,6 +94,16 @@ const shared = {
     repoUrl: "",
     featured: false,
   },
+  "mana-potion-studios": {
+    slug: "mana-potion-studios",
+    name: "mana-potion-studios",
+    tags: ["HTML", "CSS", "JavaScript"],
+    language: "JavaScript",
+    languageColor: "#f1e05a",
+    liveUrl: "https://manapotionstudios.com/",
+    repoUrl: "",
+    featured: false,
+  },
 } as const;
 
 type ProjectSlug = keyof typeof shared;
@@ -189,6 +199,12 @@ const copy: Record<
       tagline: "",
       caseStudy: [],
     },
+    "mana-potion-studios": {
+      description:
+        "Studio website for the indie game developer behind Becastled and Happy Room — a responsive games portfolio with release filters and a screenshot gallery.",
+      tagline: "",
+      caseStudy: [],
+    },
   },
   de: {
     "collab-plan": {
@@ -271,6 +287,12 @@ const copy: Record<
     "pegas-games": {
       description:
         "Eine kleine Website, die ich gebaut habe, um eine Sammlung klassischer Browser-Spiele zu hosten und zu präsentieren.",
+      tagline: "",
+      caseStudy: [],
+    },
+    "mana-potion-studios": {
+      description:
+        "Studio-Website für den Indie-Spieleentwickler hinter Becastled und Happy Room — ein responsives Spiele-Portfolio mit Release-Filtern und Screenshot-Galerie.",
       tagline: "",
       caseStudy: [],
     },
