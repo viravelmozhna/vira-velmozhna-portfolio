@@ -53,6 +53,26 @@ const shared = {
     featured: true,
     screenshot: "/shots/collab-plan.png",
   },
+  "knittedstorybears": {
+    slug: "knittedstorybears",
+    name: "knittedstorybears",
+    tags: [
+      "Astro",
+      "TypeScript",
+      "Markdown",
+      "Node.js",
+      "sharp",
+      "Remark42",
+      "Docker",
+      "Caddy",
+    ],
+    language: "Astro",
+    languageColor: "#ff5a03",
+    liveUrl: "https://www.knittedstorybears.com/",
+    repoUrl: "https://github.com/viravelmozhna/knittedstorybears",
+    featured: true,
+    screenshot: "/shots/knittedstorybears.png",
+  },
   "volunteer-coordination-app": {
     slug: "volunteer-coordination-app",
     name: "help2gether",
@@ -138,6 +158,34 @@ const copy: Record<
             "- List sharing by username, with owner and \"shared with me\" lists",
             "- Guest demo accounts seeded with a sample list and pruned automatically after 7 days",
             "- npm workspaces monorepo; frontend on Vercel, backend on Render, database on MongoDB Atlas",
+          ],
+        },
+      ],
+    },
+    "knittedstorybears": {
+      description:
+        "Free crochet pattern blog, moved from Blogger to a fast static Astro site — with rounds you can tick off while you crochet and self-hosted comments.",
+      tagline:
+        "A static Astro site that replaced a Blogger blog: every post, photo and comment imported, old links kept working, and everything self-hosted.",
+      caseStudy: [
+        {
+          heading: "Overview",
+          body: [
+            "Knitted Story Bears is a blog of free amigurumi crochet patterns — little animals, dolls and seasonal ornaments, with step-by-step photos for every round. It used to run on Blogger; I rebuilt it as a static site that is faster, easier to follow while crocheting, and fully under my control.",
+            "There are no ads, analytics or tracking, and the whole site runs on my own server.",
+          ],
+        },
+        {
+          heading: "What I built",
+          body: [
+            "- Astro static site, with each pattern written as a Markdown file in a content collection",
+            "- Pattern pages made for crocheting: tap a round to tick it off (progress is saved in the browser), a \"Jump to a part\" menu, a print-friendly layout and a Pin it button",
+            "- Collections, related patterns, a stitch guide and structured data for search engines",
+            "- Node.js import script that moved every Blogger post, photo and comment into the new site, dropping link spam on the way",
+            "- Permanent redirects from every old Blogger address, so search rankings and Pinterest pins keep working",
+            "- Build-time photo processing with sharp: step photos grouped into grids and lazy-loaded without the page jumping",
+            "- Self-hosted Remark42 comments in a locked-down Docker container — readers comment with just a name, no accounts",
+            "- Served by Caddy with automatic HTTPS and no access logs",
           ],
         },
       ],
@@ -229,6 +277,34 @@ const copy: Record<
             "- Teilen von Listen per Benutzername, mit eigenen und geteilten Listen",
             "- Gastkonten mit Beispieldaten, die nach 7 Tagen automatisch gelöscht werden",
             "- Monorepo mit npm Workspaces; Frontend auf Vercel, Backend auf Render, Datenbank auf MongoDB Atlas",
+          ],
+        },
+      ],
+    },
+    "knittedstorybears": {
+      description:
+        "Blog mit kostenlosen Häkelanleitungen, von Blogger auf eine schnelle statische Astro-Website umgezogen — mit Runden zum Abhaken beim Häkeln und selbst gehosteten Kommentaren.",
+      tagline:
+        "Eine statische Astro-Website als Ersatz für einen Blogger-Blog: alle Beiträge, Fotos und Kommentare übernommen, alte Links funktionieren weiter, alles selbst gehostet.",
+      caseStudy: [
+        {
+          heading: "Überblick",
+          body: [
+            "Knitted Story Bears ist ein Blog mit kostenlosen Amigurumi-Häkelanleitungen — kleine Tiere, Puppen und saisonale Anhänger, mit Schritt-für-Schritt-Fotos zu jeder Runde. Früher lief er auf Blogger; ich habe ihn als statische Website neu gebaut, die schneller ist, sich beim Häkeln leichter verfolgen lässt und vollständig in meiner Hand liegt.",
+            "Es gibt keine Werbung, keine Analytics und kein Tracking, und die ganze Website läuft auf meinem eigenen Server.",
+          ],
+        },
+        {
+          heading: "Was ich gebaut habe",
+          body: [
+            "- Statische Astro-Website, jede Anleitung als Markdown-Datei in einer Content Collection",
+            "- Anleitungsseiten fürs Häkeln gemacht: Runden per Tippen abhaken (der Fortschritt bleibt im Browser gespeichert), ein Menü „Jump to a part“, druckfreundliches Layout und ein Pin-it-Button",
+            "- Kollektionen, ähnliche Anleitungen, ein Maschen-Guide und strukturierte Daten für Suchmaschinen",
+            "- Node.js-Importskript, das alle Blogger-Beiträge, Fotos und Kommentare übernommen und dabei Link-Spam aussortiert hat",
+            "- Dauerhafte Weiterleitungen von allen alten Blogger-Adressen, damit Suchmaschinen-Rankings und Pinterest-Pins weiter funktionieren",
+            "- Bildverarbeitung beim Build mit sharp: Schrittfotos als Raster, Lazy Loading ohne springende Seite",
+            "- Selbst gehostete Remark42-Kommentare in einem abgesicherten Docker-Container — Kommentieren nur mit Namen, ohne Konten",
+            "- Ausgeliefert über Caddy mit automatischem HTTPS und ohne Zugriffslogs",
           ],
         },
       ],
